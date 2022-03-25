@@ -1,0 +1,6 @@
+###GET '/catalog' root with https
+GET https://localhost:7251/catalog
+
+###GET '/catalog' root with http
+http://localhost:5154/catalog
+
