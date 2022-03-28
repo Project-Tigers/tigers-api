@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-tigers.Api", "proje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-tigers.Domain", "project-tigers.Domain\project-tigers.Domain.csproj", "{5A0B4AAA-0318-49F6-8196-F97AD0BEB6EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-tigers.Data", "project-tigers.Data\project-tigers.Data.csproj", "{6A84E6DF-9067-4EF8-98D1-991CAE52343E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{5A0B4AAA-0318-49F6-8196-F97AD0BEB6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A0B4AAA-0318-49F6-8196-F97AD0BEB6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A0B4AAA-0318-49F6-8196-F97AD0BEB6EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A84E6DF-9067-4EF8-98D1-991CAE52343E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A84E6DF-9067-4EF8-98D1-991CAE52343E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A84E6DF-9067-4EF8-98D1-991CAE52343E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A84E6DF-9067-4EF8-98D1-991CAE52343E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
