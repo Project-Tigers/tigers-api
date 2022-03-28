@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\project-tigers.Domain\project-tigers.Domain.csproj" />
-    <ProjectReference Include="..\project-tigers.Data\project-tigers.Data.csproj" />
   </ItemGroup>
 
 </Project>
