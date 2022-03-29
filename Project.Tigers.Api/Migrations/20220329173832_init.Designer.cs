@@ -11,7 +11,7 @@ using Project.Tigers.Data;
 namespace project_tigers.Api.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20220329172455_init")]
+    [Migration("20220329173832_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
