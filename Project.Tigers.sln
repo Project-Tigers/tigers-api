@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-tigers.Api", "project-tigers.Api\project-tigers.Api.csproj", "{667B7BBC-6E25-4109-AF03-52331E2578D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Tigers.Api", "Project.Tigers.Api\Project.Tigers.Api.csproj", "{667B7BBC-6E25-4109-AF03-52331E2578D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-tigers.Domain", "project-tigers.Domain\project-tigers.Domain.csproj", "{5A0B4AAA-0318-49F6-8196-F97AD0BEB6EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Tigers.Domain", "Project.Tigers.Domain\Project.Tigers.Domain.csproj", "{5A0B4AAA-0318-49F6-8196-F97AD0BEB6EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-tigers.Data", "project-tigers.Data\project-tigers.Data.csproj", "{6A84E6DF-9067-4EF8-98D1-991CAE52343E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Tigers.Data", "Project.Tigers.Data\Project.Tigers.Data.csproj", "{6A84E6DF-9067-4EF8-98D1-991CAE52343E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
