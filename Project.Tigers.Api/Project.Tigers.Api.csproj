@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\project-tigers.Domain\project-tigers.Domain.csproj" />
-    <ProjectReference Include="..\project-tigers.Data\project-tigers.Data.csproj" />
+    <ProjectReference Include="..\Project.Tigers.Domain\Project.Tigers.Domain.csproj" />
+    <ProjectReference Include="..\Project.Tigers.Data\Project.Tigers.Data.csproj" />
   </ItemGroup>
 
 </Project>
