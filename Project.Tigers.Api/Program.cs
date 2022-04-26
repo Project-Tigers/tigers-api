@@ -1,12 +1,40 @@
 using Project.Tigers.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
+using Project.Tiger.Api.Security;
+using Microsoft.AspNetCore.Authentication.JwtBearer; 
 
 var builder = WebApplication.CreateBuilder(args);
+
+string authority = builder.Configuration["Auth0:Authority"] ??
+    throw new ArgumentNullException("Auth0:Authority");
+
+string audience = builder.Configuration["Auth0:Audience"] ??
+    throw new ArgumentNullException("Auth0:Authority");
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddAuthentication(options => 
+    {
+        options.DefaultAuthenticationScheme = JetBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JetBearerDefaults.AuthenticationScheme;
+    })
+    .AddJetBearer(options => 
+    {
+        options.Authority = authority;
+        options.Audience = audience;
+    });
+
+builder.Services.AddAuthorization(options => 
+    {
+        options.AddPolicy("delete:catalog", policy => 
+            policy.RequireAuthenticatedUser().RequiredClaim("scope", "delete:catalog"));
+    });
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddDbContext<StoreContext>(options => 
     options.UseSqlite("Data Source= ../Registrar.sqlite", b => b.MigrationsAssembly("Project.Tigers.Api"))
@@ -36,6 +64,7 @@ app.UseHttpsRedirection();
 
 app.UseCors();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

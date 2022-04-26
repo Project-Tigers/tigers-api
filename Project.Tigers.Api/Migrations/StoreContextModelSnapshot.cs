@@ -15,12 +15,8 @@ namespace project_tigers.Api.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-<<<<<<< HEAD:project-tigers.Api/Migrations/StoreContextModelSnapshot.cs
             modelBuilder.HasAnnotation("ProductVersion", "6.0.4");
-=======
             modelBuilder.HasAnnotation("ProductVersion", "6.0.3");
->>>>>>> main:Project.Tigers.Api/Migrations/StoreContextModelSnapshot.cs
-
             modelBuilder.Entity("Project.Tigers.Domain.Catalog.Item", b =>
                 {
                     b.Property<int>("Id")
