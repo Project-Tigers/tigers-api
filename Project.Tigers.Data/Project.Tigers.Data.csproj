@@ -1,11 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\project-tigers.Domain\project-tigers.Domain.csproj" />
+    <ProjectReference Include="..\Project.Tigers.Domain\Project.Tigers.Domain.csproj" />
   </ItemGroup>
 
+<<<<<<< HEAD:project-tigers.Data/project-tigers.Data.csproj
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.4" />
+=======
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.3" />
+>>>>>>> main:Project.Tigers.Data/Project.Tigers.Data.csproj
   </ItemGroup>
 
   <PropertyGroup>

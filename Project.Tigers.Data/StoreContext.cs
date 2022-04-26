@@ -1,4 +1,5 @@
 ﻿using Project.Tigers.Domain.Catalog;
+using Project.Tigers.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 
 namespace Project.Tigers.Data
@@ -9,7 +10,8 @@ namespace Project.Tigers.Data
             : base(options)
         { }
 
-        public DbSet<Item> Items { get; set; }
+        public DbSet<Item>? Items { get; set; }
+        public DbSet<Order>? Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
