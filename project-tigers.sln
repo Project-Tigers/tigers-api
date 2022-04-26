@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-tigers.Domain", "pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project-tigers.Data", "project-tigers.Data\project-tigers.Data.csproj", "{6A84E6DF-9067-4EF8-98D1-991CAE52343E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AD230D02-D5D9-4184-A331-833803D1006E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tigers.api.Domain.Tests", "tests\tigers.api.Domain.Tests\tigers.api.Domain.Tests.csproj", "{45D5331F-A1D2-4148-B0BF-FF776383865D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{6A84E6DF-9067-4EF8-98D1-991CAE52343E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A84E6DF-9067-4EF8-98D1-991CAE52343E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A84E6DF-9067-4EF8-98D1-991CAE52343E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D5331F-A1D2-4148-B0BF-FF776383865D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D5331F-A1D2-4148-B0BF-FF776383865D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D5331F-A1D2-4148-B0BF-FF776383865D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D5331F-A1D2-4148-B0BF-FF776383865D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{45D5331F-A1D2-4148-B0BF-FF776383865D} = {AD230D02-D5D9-4184-A331-833803D1006E}
 	EndGlobalSection
 EndGlobal
