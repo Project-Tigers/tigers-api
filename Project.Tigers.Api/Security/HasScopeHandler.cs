@@ -1,15 +1,14 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using Project.Tiger.Api.Security;
 
 namespace Project.Tiger.Api.Security
 {
-    public class HasScopeHandler : AuthorizationHandler<HasScopeRequirement>
+    public class HasScopeHandler : AuthorizationHandler<HasScopeRequirements>
     { 
         protected override Task HandleRequirementAsync(
             AuthorizationHandlerContext context,
-            HasScopeRequirement requirement)
+            HasScopeRequirements requirement)
         {
             // If user does not have the scope claim, get out of here
   

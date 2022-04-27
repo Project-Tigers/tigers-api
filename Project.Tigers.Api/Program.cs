@@ -2,7 +2,7 @@ using Project.Tigers.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 using Project.Tiger.Api.Security;
-using Microsoft.AspNetCore.Authentication.JwtBearer; 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +18,10 @@ builder.Services.AddControllers();
 
 builder.Services.AddAuthentication(options => 
     {
-        options.DefaultAuthenticationScheme = JetBearerDefaults.AuthenticationScheme;
-        options.DefaultChallengeScheme = JetBearerDefaults.AuthenticationScheme;
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
     })
-    .AddJetBearer(options => 
+    .AddJwtBearer(options => 
     {
         options.Authority = authority;
         options.Audience = audience;
@@ -30,7 +30,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization(options => 
     {
         options.AddPolicy("delete:catalog", policy => 
-            policy.RequireAuthenticatedUser().RequiredClaim("scope", "delete:catalog"));
+            policy.RequireAuthenticatedUser().RequireClaim("scope", "delete:catalog"));
     });
 
 

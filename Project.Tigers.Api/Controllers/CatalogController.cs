@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Project.Tigers.Domain.Catalog;
 using Project.Tigers.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Project.Tigers.Api.Controllers
 {
